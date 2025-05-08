@@ -1,0 +1,23 @@
+- name: Install nginx
+  apt:
+    name: nginx
+    state: present
+    update_cache: true
+
+- name: Config load balancer
+  template:
+    src: nignx.conf.j2
+    dest: /etc/nignx/nginx.conf
+  notify: restart nginx
+
+- name: Ensure nginx is running
+  service:
+    name: nginx
+    state: present
+    enabled: true
+
+handlers:
+  - name: restart nginx
+    service:
+      name: nginx
+      state: restarted
