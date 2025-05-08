@@ -23,7 +23,7 @@
 Файл `inventory.ini` содержит IP и SSH‑настройки вашей VM:
 [web]
 ```
-192.168.124.154 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa
+localhost:2222 ansible_user=tropt1
 ```
 ---
 
@@ -50,7 +50,7 @@
 ### 🚀 Запуск
 ```bash
 cd 02-ansible
-ansible-playbook -i inventory.ini playbook.yml --ask-become-pass
+ansible-playbook -i inventory.ini playbook.yml --ask-pass --ask-become-pass
 ```
 После выполнения:
 - Docker CE установлен  
