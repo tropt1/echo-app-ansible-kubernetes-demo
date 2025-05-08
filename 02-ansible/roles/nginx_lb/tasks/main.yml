@@ -15,9 +15,3 @@
     name: nginx
     state: present
     enabled: true
-
-handlers:
-  - name: restart nginx
-    service:
-      name: nginx
-      state: restarted
