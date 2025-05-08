@@ -1,0 +1,16 @@
+- name: Pull echo-app image
+  docker_image:
+    name: tropt1/echo_app
+    tag: latest
+    source: pull
+
+- name: Run 3 instances of echo-app
+  docker_container:
+    name: "echo-app-{{ item }}"
+    image: tropt1/echo-app:latest
+    env:
+      AUTHOR: "tropt1 (Maxim Bolotov)"
+    published_ports:
+      - 800{{ item }}:8000
+    restart_policy: always
+  loop: [1,2,3]
