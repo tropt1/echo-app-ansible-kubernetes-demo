@@ -23,15 +23,15 @@
 docker login
 ### 🏗 Сборка образа
 
-docker build -t <ВАШ_ЮЗЕРНЕЙМ>/echo-app:latest .
+docker build -t tropt1/echo-app:latest .
 ### 📤 Пуш в приватный репозиторий
 
-docker push <ВАШ_ЮЗЕРНЕЙМ>/echo-app:latest
+docker push tropt1/echo-app:latest
 
 ### 🔒 В веб‑интерфейсе Docker Hub сделайте репозиторий Private.
 
 ## 🌐 Проверка работы
-docker run -e AUTHOR="Иван Иванов" -p 8000:8000 <ВАШ_ЮЗЕРНЕЙМ>/echo-app:latest
+docker run -e AUTHOR="tropt1 (Maxim Bolotov)" -p 8000:8000 tropt1/echo-app:latest
 
 Откройте в браузере:
 
