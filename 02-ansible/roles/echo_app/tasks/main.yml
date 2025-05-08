@@ -1,6 +1,6 @@
 - name: Pull echo-app image
   docker_image:
-    name: tropt1/echo_app
+    name: tropt1/echo-app
     tag: latest
     source: pull
 
