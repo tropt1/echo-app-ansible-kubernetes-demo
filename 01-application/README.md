@@ -19,24 +19,29 @@
 ## ⚙️ Сборка и запуск в Docker
 
 ### 🔑 Логин в Docker Hub  
-
+```bash
 docker login
+```
+
 ### 🏗 Сборка образа
-
+```bash
 docker build -t tropt1/echo-app:latest .
+```
+
 ### 📤 Пуш в приватный репозиторий
-
+```bash
 docker push tropt1/echo-app:latest
-
+```
 ### 🔒 В веб‑интерфейсе Docker Hub сделайте репозиторий Private.
 
 ## 🌐 Проверка работы
+```bash
 docker run -e AUTHOR="tropt1 (Maxim Bolotov)" -p 8000:8000 tropt1/echo-app:latest
-
+```
 Откройте в браузере:
-
+```
 http://localhost:8000
-
+```
 ---
 
 ## 🛠 Файлы в папке /01-application
