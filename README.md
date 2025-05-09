@@ -25,9 +25,7 @@
 
 ---
 
-## 📌 Задания
-
-### ✅ 01 — Echo Web Application
+## ✅ 01 — Echo Web Application
 
 - Простой echo-сервер на Flask (Python), выводящий:
   - IP-адрес
@@ -39,7 +37,7 @@
 
 ---
 
-### ✅ 02 — Ansible Playbook
+## ✅ 02 — Ansible Playbook
 
 - Установка Docker
 - Запуск 3 контейнеров с echo-сервером из приватного реестра
@@ -49,7 +47,7 @@
 
 ---
 
-### ✅ 03 — Kubernetes Manifests
+## ✅ 03 — Kubernetes Manifests
 
 - Namespace, Deployment (3 реплики), Service (ClusterIP)
 - Readiness и Liveness-пробы
@@ -60,7 +58,7 @@
 
 ---
 
-### ⭐️ 04 — Unix Admin (опционально)
+## ✅ 04 — Unix Admin
 
 - Работа внутри контейнера Ubuntu с root-доступом
 - Установка iptables
